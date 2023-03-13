@@ -62,7 +62,7 @@ static int roman_to_integer(char c)
   
   when first number is greater, we just add that particular roman value to int_num
   
-  finally, we return the int_num and get the output.
+  finally, we return the int_num and get the output.*/
 
 
 int roman_to_int(char *s)
