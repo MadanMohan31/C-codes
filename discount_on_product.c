@@ -1,26 +1,42 @@
+/*
+
+Alice buys a toy with a selling price of 
+100
+100 rupees. There is a discount of 
+�
+x percent on the toy. Find the amount Alice needs to pay for it.
+
+Input Format
+The first line of input will contain a single integer 
+�
+T, denoting the number of test cases.
+The first and only line of each test case contains a single integer, 
+�
+x — the discount on the toy.
+Output Format
+For each test case, output on a new line the price that Alice needs to pay.
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    float pa,x;
-    int wa;
-    scanf("%d %f",&wa,&pa);
-    if(wa%5==0)
+
+    int test,dis,i;
+    scanf("%d",&test);
+    if(test>0 && test<=100)
     {
-        if(pa>=(wa+0.5))
+        for(i=0;i<test;i++)
         {
-            x = pa-wa-0.5;
-            printf("%.2f",x);
-        }
-        else
-        {
-            printf("%.2f",pa);
+            scanf("%d",&dis);
+            if(dis>=0 && dis<=100)
+            {
+                printf("%d\n",100-dis);
+            }
         }
     }
-    else
-    {
-        printf("%.2f",pa);
-    }
+
     return 0;
 }
