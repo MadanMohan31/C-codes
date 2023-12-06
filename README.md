@@ -1,5 +1,5 @@
 # C-codes
-C-codes for some questions are been solved
+C-codes for some questions have been solved
 
 This repository mainly helps in going through the interview questions of the previous year company questions.
 
